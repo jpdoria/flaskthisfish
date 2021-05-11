@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  web:
+    build:
+      context: .
+      args:
+        RECIPIENT: $RECIPIENT # for Dockerfile; for sending alerts if state is unhealthy
+    env_file: 
+      - web.env
+    ports:
+      - "5000:5000"
+  redis:
+    image: "redis:alpine"
