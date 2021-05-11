@@ -2,7 +2,7 @@
 
 This example is from the official [Getting Started](https://docs.docker.com/compose/gettingstarted/) page of Docker Docs.
 
-This is a simple web application using Flask that maintains a hit counter in Redis that is being monitored by `ping.sh` script. The said script watches the HTTP code and alerts the administrator if the HTTP code is `200` or the status is `unhealthy`.
+This is a simple web application using Flask that maintains a hit counter in Redis that is being monitored by `ping.sh` script. The said script watches the HTTP code and alerts the administrator if the HTTP code is not `200` or the status is `unhealthy`.
 
 # Prerequisite
 
